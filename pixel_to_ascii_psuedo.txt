@@ -1,0 +1,24 @@
+#ASCII converter psuedocode
+#be memory efficient here
+#loops with ranges are inclusive in this psuedocode
+#luminance is 0 to 255
+
+
+
+pixels = im.getdata()
+ascii_image = []
+
+FOR y  = 0 to (height-1)
+    row = pixels[y*width : y*(width+1) -1]
+
+    FOR x = 0 to (width-1)
+        #determine related ascii char for luminance
+        #reassign the item in the row to an ascii character
+    END for
+
+    ascii_image.append(row)
+
+END for
+
+return ascii_image
+
